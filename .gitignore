@@ -1,0 +1,14 @@
+# Exécutable
+2048
+
+# Objets compilés
+*.o
+
+# Fichiers Qt générés
+moc_*.cpp
+moc_*.h
+moc_*.o
+.qmake.stash
+
+# Dossiers de build
+build/

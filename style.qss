@@ -1,0 +1,26 @@
+Game2048#game
+{
+    background: #838B8F;
+}
+
+QLabel#scoreLabel, QLabel#bestScoreLabel
+{
+    font: bold 20px; 
+    color: white; 
+    background: black; 
+    border-radius: 10px;
+}
+
+QWidget#gridWidget
+{
+    background: black; 
+    border-radius: 10px;
+}
+
+QLabel#case
+{
+    background: #838B8F; 
+    font: bold 24px; 
+    border-radius: 10px; 
+    color: white;
+}
