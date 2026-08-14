@@ -213,23 +213,23 @@ void Game2048::updateBoard()
             QLabel *label = tiles[i][j];
             if (val == 0) {
                 label->setText("");
-                label->setStyleSheet(QString("background: #838B8F; border-radius: 10px; font: bold 24px; color: white;"));
+                label->setStyleSheet(QString("background: #1C1B29; border-radius: 10px; font: bold 24px; color: white;"));
             } else {
                 label->setText(QString::number(val));
                 QString color;
                 switch (val) {
-                    case 2: color = "#C183CD"; break;
-                    case 4: color = "#E02678"; break;
-                    case 8: color = "#FFFF00"; break;
-                    case 16: color = "#37F171"; break;
-                    case 32: color = "#25D6E3"; break;
-                    case 64: color = "#D72E89"; break;
-                    case 128: color = "#ECAD39"; break;
-                    case 256: color = "#39FFED"; break;
-                    case 512: color = "#3241CB"; break;
-                    case 1024: color = "#F71B1B"; break;
-                    case 2048: color = "#723D8D"; break;
-                    default: color = "#000000"; break;
+                    case 2:    color = "#8A00FF"; break; // Violet vif
+                    case 4:    color = "#FF2261"; break; // Rose / Magenta
+                    case 8:    color = "#FFC219"; break; // Jaune / Doré
+                    case 16:   color = "#00C828"; break; // Vert
+                    case 32:   color = "#3A106E"; break; // Violet foncé
+                    case 64:   color = "#C50D79"; break; // Fuchsia / Magenta foncé
+                    case 128:  color = "#FF5511"; break; // Orange
+                    case 256:  color = "#12DDB1"; break; // Turquoise / Menthe
+                    case 512:  color = "#008CDA"; break; // Bleu
+                    case 1024: color = "#E01B22"; break; // Rouge (ajusté dans la palette)
+                    case 2048: color = "#4A00B7"; break; // Violet très intense
+                    default:   color = "#1C1B29"; break;
                 }
                 label->setStyleSheet(QString("background: %1; border-radius: 10px; font: bold 24px; color: white;").arg(color));
             }
