@@ -12,3 +12,6 @@ moc_*.o
 
 # Dossiers de build
 build/
+
+#Makefile
+Makefile
