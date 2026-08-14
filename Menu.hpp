@@ -14,19 +14,20 @@
 class Menu : public QMainWindow
 {
     Q_OBJECT
-public:
-    explicit Menu(QWidget *parent = nullptr);
+    public:
+        explicit Menu(QWidget *parent = nullptr);
+    
+    private:
+        QStackedWidget *stackedWidget;
+        QWidget *menuWidget;
+        Game2048 *gameWidget;
+        QLabel *titleLabel;
+        void animateToGame();
 
-private:
-    QStackedWidget *stackedWidget;
-    QWidget *menuWidget;
-    Game2048 *gameWidget;
-    QLabel *titleLabel;      
-    void animateToGame();
-
-private slots:
-    void onPlayClicked();
-    void onQuitClicked();
+    private slots:
+        void onPlayClicked();
+        void onQuitClicked();
+        void onGoToMenu();
 };
 
 #endif

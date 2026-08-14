@@ -28,7 +28,6 @@ class Game2048 : public QWidget
         const int tileSize = 80;
         const int tileSpacing = 10;
 
-
         bool vide();
         void setData();     
         void getData();
@@ -51,9 +50,11 @@ class Game2048 : public QWidget
         explicit Game2048(QWidget *parent = nullptr);
         void newGame();
 
+    signals:
+        void goToMenu();
+
     protected:
         void keyPressEvent(QKeyEvent *event) override;
-
 };
 
 #endif
