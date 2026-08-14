@@ -1,26 +1,72 @@
-Game2048#game
-{
+/* Styles généraux du jeu */
+Game2048#game {
     background: #838B8F;
 }
 
-QLabel#scoreLabel, QLabel#bestScoreLabel
-{
-    font: bold 20px; 
-    color: white; 
-    background: black; 
-    border-radius: 10px;
-}
-
-QWidget#gridWidget
-{
-    background: black; 
-    border-radius: 10px;
-}
-
-QLabel#case
-{
-    background: #838B8F; 
-    font: bold 24px; 
-    border-radius: 10px; 
+QLabel#scoreLabel, QLabel#bestScoreLabel {
+    font: bold 20px;
     color: white;
+    background: black;
+    border-radius: 10px;
+}
+
+QWidget#gridWidget {
+    background: black;
+    border-radius: 10px;
+}
+
+QLabel#case {
+    background: #838B8F;
+    font: bold 24px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* ---------- Styles du menu ---------- */
+QWidget#menuWidget {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                                stop:0 #2b2b2b, stop:1 #1a1a1a);
+}
+
+QLabel#titleLabel {
+    font: 900 72px "Arial Black";
+    color: #f2e9c7;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: transparent;
+}
+
+/* Boutons communs */
+QPushButton#playButton, QPushButton#quitButton {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font: bold 22px "Arial";
+    padding: 10px;
+}
+
+/* Effet de survol : changement de couleur et ajout d'une bordure lumineuse */
+QPushButton#playButton:hover, QPushButton#quitButton:hover {
+    background-color: #45a049;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Effet d'appui */
+QPushButton#playButton:pressed, QPushButton#quitButton:pressed {
+    background-color: #3d8b40;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+/* Bouton Quitter spécifique */
+QPushButton#quitButton {
+    background-color: #e74c3c;
+}
+
+QPushButton#quitButton:hover {
+    background-color: #c0392b;
+}
+
+QPushButton#quitButton:pressed {
+    background-color: #a93226;
 }
